@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/mask_tab_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center" android:id="@id/view_selected_bg" android:background="@drawable/bg_mask_selected" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+    <com.vk.imageloader.view.VKImageView android:layout_gravity="center" android:id="@id/iv_image" android:padding="12.0dip" android:layout_width="68.0dip" android:layout_height="68.0dip" app:placeholderImage="@drawable/ic_stories_masks_placeholder_mask" app:actualImageScaleType="fitCenter" />
+    <View android:layout_gravity="center" android:id="@id/view_download" android:background="@drawable/ic_stories_masks_download" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="18.0dip" />
+    <View android:layout_gravity="center" android:id="@id/view_unsupported" android:background="@drawable/ic_stories_masks_unsupported" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="18.0dip" />
+    <View android:layout_gravity="center" android:id="@id/view_intrigue" android:background="@drawable/ic_stories_masks_intrigue" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" />
+</FrameLayout>

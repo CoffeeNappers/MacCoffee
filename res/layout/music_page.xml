@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+    <include android:id="@id/error" layout="@layout/appkit_error" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/refresh_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <me.grishka.appkit.views.UsableRecyclerView android:id="@id/list" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</merge>

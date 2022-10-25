@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/click_handler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#01000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.vk.attachpicker.widget.BackPressEditText android:textSize="14.0sp" android:textColor="#ffffffff" android:textColorHint="#99ffffff" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/et_send_message" android:background="@drawable/story_message_alpha12_send_padding12" android:paddingLeft="22.0dip" android:paddingTop="20.0dip" android:paddingRight="22.0dip" android:paddingBottom="20.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:maxHeight="110.0dip" android:minHeight="56.0dip" android:hint="@string/msg_hint" android:ems="10" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/iv_send" android:background="@drawable/picker_white_ripple_unbounded" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/ic_send_48dp" />
+    </LinearLayout>
+</FrameLayout>

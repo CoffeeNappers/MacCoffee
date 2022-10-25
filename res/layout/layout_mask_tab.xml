@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/mask_tab_bg" android:layout_width="56.0dip" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vk.imageloader.view.VKImageView android:id="@id/iv_tab" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="56.0dip" android:layout_height="48.0dip" app:placeholderImage="@drawable/ic_stories_masks_placeholder_section" app:actualImageScaleType="fitCenter" />
+    <View android:layout_gravity="center|right|top" android:id="@id/view_new_badge" android:background="@drawable/bg_masks_new_badge" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_margin="10.0dip" />
+    <View android:layout_gravity="bottom" android:id="@id/selector" android:background="@drawable/masks_tab_selector" android:layout_width="56.0dip" android:layout_height="2.0dip" />
+</FrameLayout>

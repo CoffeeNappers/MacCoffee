@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vkontakte.android.ui.OverlayLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:overlay="@drawable/highlight_post" app:padOverlay="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/attach_fb_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.vk.music.view.ThumbsImageView android:id="@id/snippet_image" android:layout_width="114.0dip" android:layout_height="fill_parent" android:layout_margin="0.5dip" android:layout_marginLeft="@dimen/post_side_padding_btn" app:placeholderImage="@drawable/placeholder_playlist" app:actualImageScaleType="centerCrop" app:backgroundImage="@color/music_placeholder_bg" app:roundedCornerRadius="2.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/video_single_info" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/post_side_padding_btn" android:minHeight="114.0dip">
+            <TextView android:textAppearance="@style/MediumBold" android:textSize="15.0dip" android:textColor="@color/almost_black" android:ellipsize="end" android:id="@id/attach_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Link Title" android:maxLines="2" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/almost_black" android:ellipsize="end" android:id="@id/attach_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100500 views" android:singleLine="true" />
+            <TextView android:textSize="14.0dip" android:textColor="#87000205" android:ellipsize="end" android:id="@id/attach_subsubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="facebook.com" android:singleLine="true" android:layout_below="@id/attach_subtitle" />
+            <com.vk.attachpicker.widget.RobotoMediumTextView android:gravity="center" android:id="@id/attach_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="qweqwe" android:maxLines="1" style="@style/ads_action_button" />
+        </LinearLayout>
+    </LinearLayout>
+</com.vkontakte.android.ui.OverlayLinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Домены" android:key="domains">
+        <EditTextPreference android:title="Домен API" android:key="apiHost" android:defaultValue="api.vk.com" />
+        <EditTextPreference android:title="Домен OAuth" android:key="oauthHost" android:defaultValue="oauth.vk.com" />
+        <EditTextPreference android:title="VK UI base uri" android:key="spaUri" android:defaultValue="vk.com/spa" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Логирование">
+        <CheckBoxPreference android:title="Логирование API" android:key="__dbg_api" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Логирование LongPoll" android:key="__dbg_longpoll" android:defaultValue="false" />
+        <Preference android:title="Запись логов в файл" android:key="logToFile" android:summary="До полного перезапуска приложения" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Кэш">
+        <Preference android:title="Скопировать БД на /sdcard" android:key="copyDatabases" />
+        <Preference android:title="Скачать все сообщения в кэш" android:key="downloadMessages" />
+        <Preference android:title="Очистить хэш 2ФА" android:key="clearTrustedHash" />
+        <Preference android:title="Очистить кэш WebView" android:key="clearWebViewCache" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Системные">
+        <EditTextPreference android:title="Language override" android:key="__dbg_lang_override" />
+        <Preference android:title="Завершить процесс" android:key="terminate" />
+        <Preference android:title="Обновить регистрацию GCM" android:key="reRegisterGCM" />
+        <Preference android:title="Скопировать push token" android:key="copyGcmToken" />
+        <Preference android:title="Обновить Google Now" android:key="reRegisterGoogleNow" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Тесты" android:key="tests">
+        <Preference android:title="Тест уведомления о ДР" android:key="bdayTest" />
+        <Preference android:title="Тест ошибки need_validation" android:key="validationTest" />
+        <Preference android:title="Тест ошибки captcha" android:key="captchaTest" />
+        <Preference android:title="Тестовое падение" android:key="testCrash" />
+        <EditTextPreference android:title="VK UI Uri (для теста)" android:key="testSPAUri" android:defaultValue="static.vk.com/demo" />
+        <Preference android:title="Тест VK UI" android:key="testVKUI" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Другие" android:key="others">
+        <CheckBoxPreference android:title="Отключить рекламу" android:key="__dbg_no_ads" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Отключить карусель рекламы" android:key="__dbg_no_slider_ads" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Тестовая реклама" android:key="__dbg_demo_ads" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Демо карусель карточек" android:key="__dbg_demo_pretty_cards" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Демо режим" android:key="demo_mode" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Прокси" android:key="__dbg_proxy_enable" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Музыкальный плеер">
+        <ListPreference android:entries="@array/audio_player_type" android:title="Player type" android:key="__dbg_player_type_view" android:dialogTitle="Player type" android:entryValues="@array/audio_player_type" />
+    </PreferenceCategory>
+</PreferenceScreen>

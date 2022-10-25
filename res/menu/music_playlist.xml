@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/mi_1" android:title="@string/music_menu_playlist_title1" />
+    <item android:id="@id/mi_2" android:title="@string/music_menu_playlist_title2" />
+</menu>

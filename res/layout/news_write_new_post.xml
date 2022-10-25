@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_header_old" android:paddingLeft="16.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:weightSum="1.0">
+        <com.vk.imageloader.view.VKCircleImageView android:id="@android:id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" app:placeholderImage="@drawable/placeholder_user_48dp" />
+        <com.vkontakte.android.ui.TextView android:textSize="15.0dip" android:textColor="@color/gray" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/what_new" android:layout_weight="1.0" />
+        <ImageButton android:id="@android:id/button1" android:background="@drawable/highlight" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_header_new" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <FrameLayout android:id="@id/fl_create_story" android:background="@drawable/picker_white_ripple_bounded" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_new_story_24dp" android:scaleType="centerInside" android:tint="@color/brand_primary" />
+                <com.vk.attachpicker.widget.RobotoMediumTextView android:textSize="14.0sp" android:textColor="@color/brand_primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/story" />
+            </LinearLayout>
+        </FrameLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffd7d8d9" android:layout_width="0.5dip" android:layout_height="24.0dip" />
+        <FrameLayout android:id="@id/fl_create_live" android:background="@drawable/picker_white_ripple_bounded" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_live_24dp" android:scaleType="centerInside" android:tint="@color/brand_primary" />
+                <com.vk.attachpicker.widget.RobotoMediumTextView android:textSize="14.0sp" android:textColor="@color/brand_primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live" />
+            </LinearLayout>
+        </FrameLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffd7d8d9" android:layout_width="0.5dip" android:layout_height="24.0dip" />
+        <FrameLayout android:id="@id/fl_create_post" android:background="@drawable/picker_white_ripple_bounded" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ic_new_post_24dp" android:scaleType="centerInside" android:tint="@color/brand_primary" />
+                <com.vk.attachpicker.widget.RobotoMediumTextView android:textSize="14.0sp" android:textColor="@color/brand_primary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/post" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

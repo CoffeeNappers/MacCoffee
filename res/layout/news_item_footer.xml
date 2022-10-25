@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/post_divider" android:background="#26000000" android:layout_width="wrap_content" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/post_side_padding" android:layout_marginTop="7.5dip" android:layout_marginRight="@dimen/post_side_padding" />
+    <LinearLayout android:orientation="horizontal" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <com.vkontakte.android.ui.OverlayTextView android:textSize="15.0sp" android:textColor="@color/post_counters" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/post_likes" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0" app:overlay="@drawable/highlight_icon" app:colors="@color/post_icons" app:src="@drawable/ic_like_24dp" />
+        <com.vkontakte.android.ui.OverlayTextView android:textSize="15.0sp" android:textColor="@color/post_counters" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/post_comments" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0" app:overlay="@drawable/highlight_icon" app:colors="@color/post_icons" app:src="@drawable/ic_comment_24dp" />
+        <com.vkontakte.android.ui.OverlayTextView android:textSize="15.0sp" android:textColor="@color/post_counters" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/post_reposts" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_weight="1.0" app:overlay="@drawable/highlight_icon" app:colors="@color/post_icons" app:src="@drawable/ic_share_24dp" />
+    </LinearLayout>
+</LinearLayout>

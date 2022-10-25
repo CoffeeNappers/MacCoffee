@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/post_side_padding" android:paddingRight="@dimen/post_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vkontakte.android.ui.LinkedTextView android:textSize="14.0dip" android:textColor="#ff70757b" android:textColorHighlight="#802b587a" android:textColorLink="#ff4d88d0" android:linksClickable="false" android:id="@android:id/text1" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vkontakte.android.ui.XFrameLayout android:orientation="vertical" android:id="@id/x_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/smallPlayerContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/smallPlayerShadow" android:background="@drawable/shadow_bottom_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="64.0dip" />
+    <com.vk.music.view.SmallPlayerView android:layout_gravity="bottom" android:id="@id/smallPlayer" android:background="#fff8f8f8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip" />
+</com.vkontakte.android.ui.XFrameLayout>

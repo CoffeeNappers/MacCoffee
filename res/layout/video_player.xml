@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.vkontakte.android.activities.VideoPlayerActivity$InsetsFrameLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/video_content_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.vkontakte.android.ui.widget.VideoTextureView android:id="@id/video_display" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <View android:id="@id/video_end_menu_scrim" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <view android:id="@id/scrim" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/video_display" android:layout_alignTop="@id/video_display" android:layout_alignRight="@id/video_display" android:layout_alignBottom="@id/video_display" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:alpha="0.0" class="com.vkontakte.android.activities.VideoPlayerActivity$ScrimInsetsView" />
+    </RelativeLayout>
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/video_player_toolbar" />
+        <com.vkontakte.android.ui.movie.PlayButton android:layout_gravity="center" android:id="@id/play_pause" android:background="@drawable/highlight_video_play" android:visibility="invisible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_shadow_96dp" android:scaleType="center" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:alpha="0.0" />
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:tint="#ffffffff" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center|right" android:id="@id/controlbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerVertical="true" android:alpha="0.0">
+            <TextView android:textSize="12.0dip" android:textColor="#99ffffff" android:id="@id/time1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="0.5dip" android:text="0:00" android:singleLine="true" />
+            <SeekBar android:id="@id/seekbar" android:layout_width="0.0dip" android:layout_height="24.0dip" android:maxHeight="3.0dip" android:progressDrawable="@drawable/progress_video" android:minHeight="3.0dip" android:thumb="@drawable/ic_video_progress_thumb_24dp" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0dip" android:textColor="#99ffffff" android:gravity="right" android:id="@id/time2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="0.5dip" android:text="0:00" android:singleLine="true" />
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/quality" android:background="@drawable/highlight_icon_white" android:layout_width="62.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/resize" android:background="@drawable/highlight_icon_white" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_video_fill_24dp" android:scaleType="center" />
+            <ImageView android:id="@id/fullscreen" android:background="@drawable/highlight_icon_white" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_fullscreen_24dp" android:scaleType="center" />
+        </LinearLayout>
+        <View android:id="@id/bottom_anchor" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.100000024px" android:layout_alignParentBottom="true" />
+        <include layout="@layout/video_player_bottom" />
+        <com.vkontakte.android.ui.widget.VideoPlayerAdsPanel android:id="@id/ads_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <LinearLayout android:gravity="center" android:id="@id/video_end_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <com.vkontakte.android.ui.movie.PlayButton android:id="@id/video_end_replay" android:background="@drawable/highlight_video_play" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_replay_36dp" android:scaleType="center" />
+            <com.vkontakte.android.ui.movie.PlayButton android:id="@id/video_end_like" android:background="@drawable/highlight_video_play" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_like_36dp" android:scaleType="center" />
+            <com.vkontakte.android.ui.movie.PlayButton android:id="@id/video_end_add" android:background="@drawable/highlight_video_play" android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/ic_check_36dp" android:scaleType="center" />
+        </LinearLayout>
+    </RelativeLayout>
+</view>

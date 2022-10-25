@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/picker_white_ripple_bounded" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.vk.imageloader.view.VKCircleImageView android:id="@id/photo" app:placeholderImage="@drawable/photo_loading" style="@style/UserSmallPhoto" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/title" android:text="@string/my_story" android:layout_toLeftOf="@id/check" style="@style/UserSmallTitle" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff909499" android:ellipsize="marquee" android:id="@id/subtitle" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/my_story_desc" android:lineSpacingExtra="2.0dip" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="top" android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/Widget.AppCompat.CompoundButton.CheckBox" />
+    </LinearLayout>
+    <View android:background="#1e000000" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.vk.attachpicker.widget.RobotoMediumTextView android:textSize="14.0sp" android:textColor="#ff909499" android:gravity="center|left" android:id="@id/tv_send_with_message" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/send_with_message" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff909499" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="72.0dip" android:text="@string/no_friends" />
+</LinearLayout>

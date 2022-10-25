@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/click_handler" android:background="@drawable/picker_white_ripple_bounded_2dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+    <com.vk.stories.view.StoryCircleImageView android:layout_gravity="center_horizontal" android:id="@id/iv_story_image" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="14.0dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_my_story_bg" android:background="@drawable/btn_my_story_circle_padding_4" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/ic_new_story_plus_24dp" android:scaleType="centerInside" />
+    <com.vk.attachpicker.widget.RobotoMediumTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|top" android:id="@id/tv_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="78.0dip" android:maxLines="1" />
+</merge>
