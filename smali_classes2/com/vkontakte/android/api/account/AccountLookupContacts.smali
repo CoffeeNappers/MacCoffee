@@ -41,14 +41,14 @@
     .prologue
     .line 21
     .local p1, "contacts":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
-    const-string/jumbo v0, "account.lookupContacts"
+    const-string v0, "account.lookupContacts"
 
     invoke-direct {p0, v0}, Lcom/vkontakte/android/api/VKAPIRequest;-><init>(Ljava/lang/String;)V
 
     .line 22
-    const-string/jumbo v0, "contacts"
+    const-string v0, "contacts"
 
-    const-string/jumbo v1, ","
+    const-string v1, ","
 
     invoke-static {v1, p1}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
 
@@ -57,7 +57,7 @@
     invoke-virtual {p0, v0, v1}, Lcom/vkontakte/android/api/account/AccountLookupContacts;->param(Ljava/lang/String;Ljava/lang/String;)Lcom/vkontakte/android/api/VKAPIRequest;
 
     .line 23
-    const-string/jumbo v0, "service"
+    const-string v0, "service"
 
     invoke-virtual {p0, v0, p2}, Lcom/vkontakte/android/api/account/AccountLookupContacts;->param(Ljava/lang/String;Ljava/lang/String;)Lcom/vkontakte/android/api/VKAPIRequest;
 
@@ -65,15 +65,15 @@
     if-eqz p3, :cond_0
 
     .line 25
-    const-string/jumbo v0, "mycontact"
+    const-string v0, "mycontact"
 
     invoke-virtual {p0, v0, p3}, Lcom/vkontakte/android/api/account/AccountLookupContacts;->param(Ljava/lang/String;Ljava/lang/String;)Lcom/vkontakte/android/api/VKAPIRequest;
 
     .line 27
     :cond_0
-    const-string/jumbo v0, "fields"
+    const-string v0, "fields"
 
-    const-string/jumbo v1, "photo_100,photo_50,photo_200,common_count"
+    const-string v1, "photo_100,photo_50,photo_200,common_count"
 
     invoke-virtual {p0, v0, v1}, Lcom/vkontakte/android/api/account/AccountLookupContacts;->param(Ljava/lang/String;Ljava/lang/String;)Lcom/vkontakte/android/api/VKAPIRequest;
 
@@ -85,7 +85,7 @@
 # virtual methods
 .method public parse(Lorg/json/JSONObject;)Lcom/vkontakte/android/api/account/AccountLookupContacts$Result;
     .locals 16
-    .param p1, "o"    # Lorg/json/JSONObject;
+    .param p1, "jsonObject"    # Lorg/json/JSONObject;
 
     .prologue
     .line 32
@@ -101,7 +101,7 @@
 
     .line 33
     .local v6, "other":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/vkontakte/android/UserProfile;>;"
-    const-string/jumbo v10, "response"
+    const-string v10, "response"
 
     move-object/from16 v0, p1
 
@@ -110,7 +110,7 @@
     move-result-object p1
 
     .line 34
-    const-string/jumbo v10, "found"
+    const-string v10, "found"
 
     move-object/from16 v0, p1
 
@@ -119,8 +119,8 @@
     move-result-object v3
 
     .line 35
-    .local v3, "jfound":Lorg/json/JSONArray;
-    const-string/jumbo v10, "other"
+    .local v3, "jsonArray":Lorg/json/JSONArray;
+    const-string v10, "other"
 
     move-object/from16 v0, p1
 
@@ -129,7 +129,7 @@
     move-result-object v4
 
     .line 36
-    .local v4, "jother":Lorg/json/JSONArray;
+    .local v4, "jsonArray2":Lorg/json/JSONArray;
     const/4 v2, 0x0
 
     .local v2, "i":I
@@ -162,9 +162,9 @@
     .line 40
     iget-object v10, v7, Lcom/vkontakte/android/UserProfile;->extra:Landroid/os/Bundle;
 
-    const-string/jumbo v11, "external_id"
+    const-string v11, "external_id"
 
-    const-string/jumbo v12, "contact"
+    const-string v12, "contact"
 
     invoke-virtual {v5, v12}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -173,7 +173,7 @@
     invoke-virtual {v10, v11, v12}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 41
-    const-string/jumbo v10, "common_count"
+    const-string v10, "common_count"
 
     invoke-virtual {v5, v10}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I
 
@@ -189,7 +189,7 @@
 
     const v11, 0x7f0d0040
 
-    const-string/jumbo v12, "common_count"
+    const-string v12, "common_count"
 
     invoke-virtual {v5, v12}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
@@ -201,7 +201,7 @@
 
     const/4 v14, 0x0
 
-    const-string/jumbo v15, "common_count"
+    const-string v15, "common_count"
 
     invoke-virtual {v5, v15}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
@@ -230,7 +230,7 @@
 
     .line 41
     :cond_0
-    const-string/jumbo v10, ""
+    const-string v10, ""
 
     goto :goto_1
 
@@ -274,9 +274,9 @@
     .line 49
     iget-object v10, v7, Lcom/vkontakte/android/UserProfile;->extra:Landroid/os/Bundle;
 
-    const-string/jumbo v11, "external_id"
+    const-string v11, "external_id"
 
-    const-string/jumbo v12, "contact"
+    const-string v12, "contact"
 
     invoke-virtual {v5, v12}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -325,7 +325,7 @@
 
     .line 57
     .local v9, "x":Ljava/lang/Exception;
-    const-string/jumbo v10, "vk"
+    const-string v10, "vk"
 
     invoke-static {v10, v9}, Lcom/vkontakte/android/Log;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 

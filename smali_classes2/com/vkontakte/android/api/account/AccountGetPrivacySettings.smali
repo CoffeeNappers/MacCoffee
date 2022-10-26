@@ -18,15 +18,20 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 20
-    const-string/jumbo v0, "account.getPrivacySettings"
+    .line 14
+    const-string v0, "account.getPrivacySettings"
 
     invoke-direct {p0, v0}, Lcom/vkontakte/android/api/VKAPIRequest;-><init>(Ljava/lang/String;)V
 
-    .line 21
+    const-string v0, "v"
+
+    const-string v1, "5.92"
+
+    invoke-direct {p0, v0, v1}, Lcom/vkontakte/android/api/account/AccountGetPrivacySettings;->param(Ljava/lang/String;Ljava/lang/String;)Lcom/vkontakte/android/api/APIRequest;
+
     return-void
 .end method
 
@@ -41,7 +46,6 @@
     .end annotation
 
     .prologue
-    .line 17
     invoke-virtual {p0, p1}, Lcom/vkontakte/android/api/account/AccountGetPrivacySettings;->parse(Lorg/json/JSONObject;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -51,7 +55,7 @@
 
 .method public parse(Lorg/json/JSONObject;)Ljava/util/ArrayList;
     .locals 9
-    .param p1, "r"    # Lorg/json/JSONObject;
+    .param p1, "jsonObject"    # Lorg/json/JSONObject;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

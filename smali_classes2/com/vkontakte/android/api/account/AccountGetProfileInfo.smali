@@ -45,7 +45,7 @@
 # virtual methods
 .method public parse(Lorg/json/JSONObject;)Landroid/os/Bundle;
     .locals 14
-    .param p1, "o"    # Lorg/json/JSONObject;
+    .param p1, "jsonObject"    # Lorg/json/JSONObject;
 
     .prologue
     const/4 v7, 0x0
@@ -61,7 +61,7 @@
     move-result-object v5
 
     .line 24
-    .local v5, "r":Lorg/json/JSONObject;
+    .local v5, "jsonObject2":Lorg/json/JSONObject;
     new-instance v6, Landroid/os/Bundle;
 
     invoke-direct {v6}, Landroid/os/Bundle;-><init>()V
