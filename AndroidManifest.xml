@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.vkontakte.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vkontakte.android" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -300,7 +300,7 @@
         <receiver android:name="com.vkontakte.android.DebugBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SECRET_CODE"/>
-                <data android:host=" 856682583" android:scheme="android_secret_code"/>
+                <data android:host="\ 856682583" android:scheme="android_secret_code"/>
             </intent-filter>
         </receiver>
         <receiver android:exported="false" android:name="com.vkontakte.android.NotificationButtonsReceiver">

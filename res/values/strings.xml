@@ -208,7 +208,7 @@
     <string name="allow_messages">Allow messages</string>
     <string name="already_have_account">Already have an account?</string>
     <string name="already_logged_in">You already have a VK account on this device. If you wish to log in with another account, log out from the current one first.</string>
-    <string name="app_name">VK MacCoffee</string>
+    <string name="app_name">VK</string>
     <string name="app_remove_confirm">Are you sure you want to remove this game from your account?</string>
     <string name="article_go_to_group">Go to %s community</string>
     <string name="article_go_to_profile">"Go to %s's page"</string>
@@ -266,7 +266,7 @@
     <string name="auth_wrong_code">Confirmation code is incorrect.</string>
     <string name="back">Back</string>
     <string name="billing_type">Payment method</string>
-    <string name="birthday_subtitle_divider" />
+    <string name="birthday_subtitle_divider"> </string>
     <string name="birthday_subtitle_today">turned </string>
     <string name="birthday_subtitle_upcoming">will turn %s</string>
     <string name="birthday_today">"Today is %s's birthday."</string>
@@ -1977,7 +1977,7 @@ photo"</string>
     <string name="no_videos">No videos yet</string>
     <string name="picker_last_24_hours">Последние 24 часа</string>
     <string name="picker_trim_video_length">Выберите отрезок видео длиной до %d секунд</string>
-    <string name="day_of_week_label_typeface">sans-serif-light</string>
+    <string name="day_of_week_label_typeface">sans-serif</string>
     <string name="abc_font_family_body_1_material">sans-serif</string>
     <string name="abc_font_family_body_2_material">sans-serif-medium</string>
     <string name="abc_font_family_button_material">sans-serif-medium</string>
@@ -2003,7 +2003,7 @@ photo"</string>
     <string name="day_picker_description">Month grid of days</string>
     <string name="default_web_client_id">841415684880-i5q85vkpnnj8fgbd1qde5o9kq87656dk.apps.googleusercontent.com</string>
     <string name="define_rxlocation" />
-    <string name="deleted_key">" "<g example="4" id="key">%1$s</g> deleted</string>
+    <string name="deleted_key"><g example="4" id="key">%1$s</g> deleted</string>
     <string name="done_label">Done</string>
     <string name="fb_app_id">128749580520227</string>
     <string name="firebase_database_url">https://api-project-841415684880.firebaseio.com</string>

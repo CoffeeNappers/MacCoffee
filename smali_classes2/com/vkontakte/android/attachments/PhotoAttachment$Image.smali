@@ -1,3 +1,4 @@
+###### Class su.operator555.vkcoffee.attachments.PhotoAttachment.Image (su.operator555.vkcoffee.attachments.PhotoAttachment$Image)
 .class public Lcom/vkontakte/android/attachments/PhotoAttachment$Image;
 .super Ljava/lang/Object;
 .source "PhotoAttachment.java"
@@ -29,39 +30,37 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .registers 1
 
-    .prologue
-    .line 242
+    .line 408
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 243
     return-void
 .end method
 
 .method public constructor <init>(CLjava/lang/String;II)V
-    .locals 0
-    .param p1, "type"    # C
-    .param p2, "url"    # Ljava/lang/String;
-    .param p3, "w"    # I
-    .param p4, "h"    # I
+    .registers 5
+    .param p1, "var1"    # C
+    .param p2, "var2"    # Ljava/lang/String;
+    .param p3, "var3"    # I
+    .param p4, "var4"    # I
 
-    .prologue
-    .line 245
+    .line 410
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 246
+    .line 411
     iput-char p1, p0, Lcom/vkontakte/android/attachments/PhotoAttachment$Image;->type:C
 
-    .line 247
+    .line 412
     iput-object p2, p0, Lcom/vkontakte/android/attachments/PhotoAttachment$Image;->url:Ljava/lang/String;
 
-    .line 248
+    .line 413
     iput p3, p0, Lcom/vkontakte/android/attachments/PhotoAttachment$Image;->width:I
 
-    .line 249
+    .line 414
     iput p4, p0, Lcom/vkontakte/android/attachments/PhotoAttachment$Image;->height:I
 
-    .line 250
+    .line 415
     return-void
 .end method
+

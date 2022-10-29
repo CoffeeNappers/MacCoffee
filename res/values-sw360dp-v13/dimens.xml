@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sticker_suggest_size">72.0dip</dimen>
+    <dimen name="voice_rec_button_height">216.0dip</dimen>
+    <dimen name="voice_rec_button_margin">-6.0dip</dimen>
+    <dimen name="voice_rec_button_shift_x">20.0dip</dimen>
+    <dimen name="voice_rec_button_shift_y_hor">66.0dip</dimen>
+    <dimen name="voice_rec_button_shift_y_vert">85.0dip</dimen>
+    <dimen name="voice_rec_button_size">80.0dip</dimen>
+    <dimen name="voice_rec_button_width">104.0dip</dimen>
+    <dimen name="voice_rec_duration_padding">55.0dip</dimen>
+    <dimen name="voice_rec_min_wave_radius">25.0dip</dimen>
+    <dimen name="voice_rec_shadow_size">104.0dip</dimen>
+</resources>

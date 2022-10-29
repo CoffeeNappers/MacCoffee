@@ -49,8 +49,8 @@
     <attr name="layout_constraintHeight_min" format="dimension" />
     <attr name="layout_constraintHorizontal_bias" format="float" />
     <attr name="layout_constraintHorizontal_chainStyle">
-        <enum name="packed" value="2" />
         <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
         <enum name="spread_inside" value="1" />
     </attr>
     <attr name="layout_constraintHorizontal_weight" format="float" />
@@ -83,8 +83,8 @@
     </attr>
     <attr name="layout_constraintVertical_bias" format="float" />
     <attr name="layout_constraintVertical_chainStyle">
-        <enum name="packed" value="2" />
         <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
         <enum name="spread_inside" value="1" />
     </attr>
     <attr name="layout_constraintVertical_weight" format="float" />
@@ -135,9 +135,9 @@
         <enum name="tabMode" value="2" />
     </attr>
     <attr name="displayOptions">
+        <flag name="none" value="0x00000000" />
         <flag name="disableHome" value="0x00000020" />
         <flag name="homeAsUp" value="0x00000004" />
-        <flag name="none" value="0x00000000" />
         <flag name="showCustom" value="0x00000010" />
         <flag name="showHome" value="0x00000002" />
         <flag name="showTitle" value="0x00000008" />
@@ -418,36 +418,36 @@
     <attr name="layout_anchor" format="reference" />
     <attr name="layout_keyline" format="integer" />
     <attr name="layout_anchorGravity">
+        <flag name="fill" value="0x00000077" />
         <flag name="bottom" value="0x00000050" />
         <flag name="center" value="0x00000011" />
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="center_vertical" value="0x00000010" />
-        <flag name="clip_horizontal" value="0x00000008" />
-        <flag name="clip_vertical" value="0x00000080" />
         <flag name="end" value="0x00800005" />
-        <flag name="fill" value="0x00000077" />
-        <flag name="fill_horizontal" value="0x00000007" />
         <flag name="fill_vertical" value="0x00000070" />
         <flag name="left" value="0x00000003" />
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="top" value="0x00000030" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="fill_horizontal" value="0x00000007" />
     </attr>
     <attr name="layout_insetEdge">
+        <enum name="none" value="0" />
         <enum name="bottom" value="80" />
         <enum name="end" value="8388613" />
         <enum name="left" value="3" />
-        <enum name="none" value="0" />
         <enum name="right" value="3" />
         <enum name="start" value="8388611" />
         <enum name="top" value="48" />
     </attr>
     <attr name="layout_dodgeInsetEdges">
         <flag name="all" value="0x00000077" />
+        <flag name="none" value="0x00000000" />
         <flag name="bottom" value="0x00000050" />
         <flag name="end" value="0x00800005" />
         <flag name="left" value="0x00000003" />
-        <flag name="none" value="0x00000000" />
         <flag name="right" value="0x00000003" />
         <flag name="start" value="0x00800003" />
         <flag name="top" value="0x00000030" />
@@ -491,9 +491,9 @@
     <attr name="paramValue" format="string" />
     <attr name="rippleColor" format="color" />
     <attr name="fabSize">
+        <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
         <enum name="mini" value="1" />
-        <enum name="normal" value="0" />
     </attr>
     <attr name="pressedTranslationZ" format="dimension" />
     <attr name="borderWidth" format="dimension" />
@@ -509,6 +509,7 @@
     <attr name="viewAspectRatio" format="float" />
     <attr name="placeholderImage" format="reference" />
     <attr name="placeholderImageScaleType">
+        <enum name="none" value="-1" />
         <enum name="center" value="4" />
         <enum name="centerCrop" value="6" />
         <enum name="centerInside" value="5" />
@@ -517,10 +518,10 @@
         <enum name="fitStart" value="1" />
         <enum name="fitXY" value="0" />
         <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
     </attr>
     <attr name="retryImage" format="reference" />
     <attr name="retryImageScaleType">
+        <enum name="none" value="-1" />
         <enum name="center" value="4" />
         <enum name="centerCrop" value="6" />
         <enum name="centerInside" value="5" />
@@ -529,10 +530,10 @@
         <enum name="fitStart" value="1" />
         <enum name="fitXY" value="0" />
         <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
     </attr>
     <attr name="failureImage" format="reference" />
     <attr name="failureImageScaleType">
+        <enum name="none" value="-1" />
         <enum name="center" value="4" />
         <enum name="centerCrop" value="6" />
         <enum name="centerInside" value="5" />
@@ -541,10 +542,10 @@
         <enum name="fitStart" value="1" />
         <enum name="fitXY" value="0" />
         <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
     </attr>
     <attr name="progressBarImage" format="reference" />
     <attr name="progressBarImageScaleType">
+        <enum name="none" value="-1" />
         <enum name="center" value="4" />
         <enum name="centerCrop" value="6" />
         <enum name="centerInside" value="5" />
@@ -553,10 +554,10 @@
         <enum name="fitStart" value="1" />
         <enum name="fitXY" value="0" />
         <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
     </attr>
     <attr name="progressBarAutoRotateInterval" format="integer" />
     <attr name="actualImageScaleType">
+        <enum name="none" value="-1" />
         <enum name="center" value="4" />
         <enum name="centerCrop" value="6" />
         <enum name="centerInside" value="5" />
@@ -565,7 +566,6 @@
         <enum name="fitStart" value="1" />
         <enum name="fitXY" value="0" />
         <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
     </attr>
     <attr name="backgroundImage" format="reference" />
     <attr name="overlayImage" format="reference" />
@@ -617,25 +617,25 @@
     <attr name="toAddressesSection" format="string" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="showDividers">
-        <flag name="beginning" value="0x00000001" />
-        <flag name="end" value="0x00000004" />
-        <flag name="middle" value="0x00000002" />
         <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
+        <flag name="beginning" value="0x00000001" />
+        <flag name="middle" value="0x00000002" />
     </attr>
     <attr name="dividerPadding" format="dimension" />
     <attr name="entries" format="reference" />
     <attr name="entryValues" format="reference" />
     <attr name="imageAspectRatioAdjust">
+        <enum name="none" value="0" />
         <enum name="adjust_height" value="2" />
         <enum name="adjust_width" value="1" />
-        <enum name="none" value="0" />
     </attr>
     <attr name="imageAspectRatio" format="float" />
     <attr name="circleCrop" format="boolean" />
     <attr name="mapType">
-        <enum name="hybrid" value="4" />
         <enum name="none" value="0" />
         <enum name="normal" value="1" />
+        <enum name="hybrid" value="4" />
         <enum name="satellite" value="2" />
         <enum name="terrain" value="3" />
     </attr>
@@ -662,8 +662,8 @@
     <attr name="latLngBoundsNorthEastLatitude" format="float" />
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
     <attr name="mpb_progressStyle">
-        <enum name="circular" value="0" />
         <enum name="horizontal" value="1" />
+        <enum name="circular" value="0" />
     </attr>
     <attr name="mpb_setBothDrawables" format="boolean" />
     <attr name="mpb_useIntrinsicPadding" format="boolean" />
@@ -942,8 +942,8 @@
         <enum name="scrollable" value="0" />
     </attr>
     <attr name="tabGravity">
-        <enum name="center" value="1" />
         <enum name="fill" value="0" />
+        <enum name="center" value="1" />
     </attr>
     <attr name="tabMinWidth" format="dimension" />
     <attr name="tabMaxWidth" format="dimension" />
@@ -1025,14 +1025,14 @@
         <enum name="unknown" value="0" />
     </attr>
     <attr name="com_facebook_style">
+        <enum name="standard" value="0" />
         <enum name="box_count" value="2" />
         <enum name="button" value="1" />
-        <enum name="standard" value="0" />
     </attr>
     <attr name="com_facebook_auxiliary_view_position">
         <enum name="bottom" value="0" />
-        <enum name="inline" value="1" />
         <enum name="top" value="2" />
+        <enum name="inline" value="1" />
     </attr>
     <attr name="com_facebook_horizontal_alignment">
         <enum name="center" value="0" />
@@ -1048,8 +1048,8 @@
         <enum name="never_display" value="2" />
     </attr>
     <attr name="com_facebook_preset_size">
-        <enum name="large" value="-4" />
         <enum name="normal" value="-3" />
+        <enum name="large" value="-4" />
         <enum name="small" value="-2" />
     </attr>
     <attr name="com_facebook_is_cropped" format="boolean" />
@@ -1060,9 +1060,9 @@
     <attr name="slm_isHeader" format="boolean" />
     <attr name="slm_headerDisplay">
         <flag name="end" value="0x00000004" />
+        <flag name="start" value="0x00000002" />
         <flag name="inline" value="0x00000001" />
         <flag name="overlay" value="0x00000008" />
-        <flag name="start" value="0x00000002" />
         <flag name="sticky" value="0x00000010" />
     </attr>
     <attr name="slm_section_firstPosition" format="integer" />

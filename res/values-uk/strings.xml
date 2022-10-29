@@ -121,7 +121,7 @@
     <string name="allow_messages">Дозволити повідомлення</string>
     <string name="already_have_account">Вже зареєстровані?</string>
     <string name="already_logged_in">На цьому пристрої вже є акаунт ВКонтакті. Для входу в інший аккаунт необхідно вийти з поточного.</string>
-    <string name="app_name">VK MacCoffee</string>
+    <string name="app_name">ВКонтакті</string>
     <string name="app_remove_confirm">Ви дійсно хочете відключити цю гру від свого акаунту?</string>
     <string name="article_go_to_group">Перейти до спільноти %s</string>
     <string name="article_go_to_profile">Перейти на ссторінку %s</string>

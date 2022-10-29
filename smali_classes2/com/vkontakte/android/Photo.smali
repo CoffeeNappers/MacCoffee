@@ -1098,20 +1098,38 @@
 
     iput-char v7, v1, Lcom/vkontakte/android/Photo$Image;->type:C
 
-    .line 151
-    const-string/jumbo v7, "src"
+    .line 127
+    const-string v7, "src"
 
+    invoke-virtual {v2, v7}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_128
+
+    const-string v7, "src"
+
+    :goto_123
     invoke-virtual {v2, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
+    goto :goto_12b
+
+    :cond_128
+    const-string v7, "url"
+
+    goto :goto_123
+
+    :goto_12b
     iput-object v7, v1, Lcom/vkontakte/android/Photo$Image;->url:Ljava/lang/String;
 
-    .line 152
+    .line 128
     iget-object v7, p0, Lcom/vkontakte/android/Photo;->sizes:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    
     .line 145
     add-int/lit8 v0, v0, 0x1
 

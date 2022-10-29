@@ -6,7 +6,7 @@
     </FrameLayout>
     <com.fourmob.datetimepicker.time.RadialPickerLayout android:layout_gravity="center" android:id="@id/time_picker" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="@dimen/picker_dimen" />
     <View android:background="@color/line_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
-    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:buttonBarStyle">
-        <Button android:textSize="@dimen/done_label_size" android:textColor="@color/done_text_color" android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/done_label" style="?android:buttonBarButtonStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <Button android:textSize="@dimen/done_label_size" android:textColor="@color/done_text_color" android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/done_label" style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 </LinearLayout>

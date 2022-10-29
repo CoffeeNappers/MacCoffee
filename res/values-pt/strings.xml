@@ -181,7 +181,7 @@
     <string name="allow_messages">Habilitar mensagens</string>
     <string name="already_have_account">Já tem o perfil?</string>
     <string name="already_logged_in">Você já tem o perfil do VK neste aplicativo. Se você quiser acessar com outro perfil tem que sair deste.</string>
-    <string name="app_name">VK MacCoffee</string>
+    <string name="app_name">VK</string>
     <string name="app_remove_confirm">Deseja realmente desabilitar este aplicativo no seu perfil?</string>
     <string name="article_go_to_group">Ir a %s comunidade</string>
     <string name="article_go_to_profile">Ir à página de %s</string>

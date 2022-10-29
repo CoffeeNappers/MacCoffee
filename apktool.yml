@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: vk_test.apk
+apkFileName: 4x.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -13,7 +13,7 @@ packageInfo:
   renameManifestPackage: null
 sdkInfo:
   minSdkVersion: '16'
-  targetSdkVersion: '29'
+  targetSdkVersion: '22'
 sharedLibrary: false
 sparseResources: false
 unknownFiles:
@@ -564,5 +564,5 @@ usesFramework:
   tag: null
 version: 2.6.1
 versionInfo:
-  versionCode: '1'
-  versionName: 0.0.1
+  versionCode: '1206'
+  versionName: 4.13.1

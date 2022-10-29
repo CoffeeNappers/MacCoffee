@@ -208,7 +208,7 @@
     <string name="allow_messages">Разрешить сообщения</string>
     <string name="already_have_account">Уже зарегистрированы?</string>
     <string name="already_logged_in">На этом устройстве уже имеется аккаунт ВКонтакте. Для входа в другой аккаунт необходимо выйти из текущего.</string>
-    <string name="app_name">VK MacCoffee</string>
+    <string name="app_name">ВКонтакте</string>
     <string name="app_remove_confirm">Вы действительно хотите отключить эту игру от своего аккаунта?</string>
     <string name="article_go_to_group">Перейти к сообществу %s</string>
     <string name="article_go_to_profile">Перейти на страницу %s</string>

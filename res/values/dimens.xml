@@ -96,7 +96,7 @@
     <dimen name="picker_dimen">270.0dip</dimen>
     <dimen name="year_label_height">64.0dip</dimen>
     <dimen name="year_label_text_size">22.0dip</dimen>
-    <dimen name="notification_right_side_padding_top">4.0dip</dimen>
+    <dimen name="notification_right_side_padding_top">2.0dip</dimen>
     <dimen name="abc_switch_padding">3.0dip</dimen>
     <dimen name="notification_content_margin_start">8.0dip</dimen>
     <dimen name="notification_main_column_padding_top">10.0dip</dimen>
